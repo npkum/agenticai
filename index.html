@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI: Transforming Industries</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Agentic AI: Transforming Industries</h1>
+        <div class="tts-controls">
+            <button class="listenBtn" data-target="ai-agent,agentic-ai,generative-ai,rag-ai,use-cases,usecase-rag,tool-aug-genai,manufacturing-use-case, healthcare-use-case, financial-use-case,comparison,decision-guide,full-comparison">🔊 Listen to Article</button>
+            <button id="pauseBtn" disabled>⏸ Pause</button>
+            <button id="resumeBtn" disabled>▶ Resume</button>
+            <button id="stopBtn" disabled>⏹ Stop</button>
+            <span id="speechStatus"></span>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#ai-agent">AI Agent</a>
+        <a href="#agentic-ai">Agentic AI</a>
+        <a href="#generative-ai">Generative AI</a>
+        <a href="#rag-ai">RAG AI</a>
+        <a href="#use-cases">Use Cases</a>
+        <a href="#comparison">Comparison</a>
+		<a href="#decision-guide">Decision Guide</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- AI Agent -->
+        <section id="ai-agent">
+            <div class="section-header">
+                <h2>AI Agent</h2>
+                <button class="listenBtn" data-target="ai-agent">🔊</button>
+            </div>
+            <p>An AI agent is an autonomous or semi-autonomous system powered by artificial intelligence that interacts with its environment or users to achieve a defined goal. It perceives inputs (such as data or commands), processes them using reasoning or learning models, and takes actions often through APIs or external systems—to fulfill tasks. The agent’s level of autonomy can range from simple reactive behaviour to complex, goal-driven planning.</p>
+        </section>
+
+        <!-- Agentic AI -->
+        <section id="agentic-ai">
+            <div class="section-header">
+                <h2>Agentic AI</h2>
+                <button class="listenBtn" data-target="agentic-ai">🔊</button>
+            </div>
+            <p>Agentic AI refers to advanced AI systems that possess goal-oriented behaviour, multi-step reasoning, autonomous decision-making, and the ability to interact with tools and remember context. These systems are capable of performing tasks independently to achieve an outcome without requiring explicit step-by-step instructions. Agentic AI mimics a form of "digital agency" where the system can break down a complex goal into sub-tasks, make decisions, and execute those tasks across various systems.</p>
+            <h3>Core Characteristics of Agentic AI</h3>
+            <ul>
+                <li>Goal-directed behaviour</li>
+                <li>Multi-step reasoning and planning</li>
+                <li>Autonomous decision-making</li>
+                <li>Access and interaction with tools and APIs</li>
+                <li>Context awareness and memory</li>
+                <li>Proactive task execution</li>
+            </ul>
+        </section>
+
+        <h2>Generative AI and RAG Systems</h2>
+		<!-- Generative AI -->
+        <section id="generative-ai">
+            <div class="section-header">
+                <h2>Generative AI</h2>
+                <button class="listenBtn" data-target="generative-ai">🔊</button>
+            </div>
+            <p>Generative AI is a class of artificial intelligence models, often based on large language models (LLMs), capable of producing new content such as text, images, code, audio, or video. It works by learning patterns from vast datasets and generating outputs that mimic human-like responses or original creations. These systems do not merely retrieve facts but synthesize new information or responses based on input prompts.</p>
+        </section>
+
+        <!-- RAG AI -->
+        <section id="rag-ai">
+            <div class="section-header">
+                <h2>RAG (Retrieval-Augmented Generation) Based AI System</h2>
+                <button class="listenBtn" data-target="rag-ai">🔊</button>
+            </div>
+            <p>RAG-based systems enhance generative AI by integrating an information retrieval component. Instead of relying solely on pre-trained knowledge, these systems retrieve relevant data from an external source (like documents, databases, or APIs) and use it to generate more accurate and contextual responses. RAG models bridge the gap between static LLM knowledge and dynamic, up-to-date external data.</p>
+            <h3>Key Characteristics of RAG-based Systems</h3>
+            <ul>
+                <li>Reactive Q&A behaviour</li>
+                <li>Information retrieval from external sources</li>
+                <li>No tool usage or autonomous action</li>
+                <li>Lacks reasoning or planning capability</li>
+            </ul>
+        </section>
+
+        <!-- Use Cases -->
+        <section id="use-cases">
+            <div class="section-header">
+                <h2><p> Industry Use Cases Application of RAG-Enabled, Tool-Augmented, and Agentic AI </p></h2>
+                <!-- <button class="listenBtn" data-target="use-cases">🔊 Listen</button> -->
+            </div>
+
+        
+		<!-- RAG-Enabled Generative AI -->
+		<section id="use-case-rag">
+            <div class="section-header">
+                <h3>RAG-Enabled Generative AI</h3>
+                <button class="listenBtn" data-target="use-case-rag">🔊</button>
+            </div>
+            <p><strong>Industry:</strong> Healthcare<br><strong>Use Case:</strong> Medical Policy Support Chatbot</p>
+            <p>A healthcare provider implements a generative AI system that allows doctors or nurses to ask questions like “What is the pre-authorization requirement for an MRI scan?” The system retrieves policy documents from the internal database and provides accurate, real-time answers using Retrieval-Augmented Generation (RAG). The AI only fetches and synthesizes relevant textual information — no tool usage or task execution is involved.</p>
+		</section>
+		
+         <!-- Tool-Augmented Generative AI -->
+		<section id="tool-aug-genai">
+			<div class="section-header">
+				<h3>Tool-Augmented Generative AI</h3>
+				<button class="listenBtn" data-target="tool-aug-genai">🔊</button>
+            </div>
+            <p><strong>Industry:</strong> Finance<br><strong>Use Case:</strong> Investment Portfolio Assistant</p>
+            <p>A financial advisory firm develops a tool-augmented chatbot for client servicing. The chatbot can respond to natural language questions like “What is the performance of my portfolio this month?” by accessing client portfolios through APIs. It can also download transaction history or generate performance charts using visualization libraries, but it doesn’t plan actions, infer intentions, or proactively suggest changes unless prompted.</p>
+		</section>	
+		
+		<!-- Agentic AI Use Cases -->
+		<h3>Agentic AI</h3>
+        <div id="agentic-example">
+            <p>Agentic AI drives autonomous workflows across industries. Explore the following use cases for detailed insights.</p>
+             <table class="use-case-table">
+             <thead>
+                <tr>
+                    <th>Industry Vertical</th>
+                    <th>Use Case</th>
+                    <th>Link</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>Finance</td>
+                    <td>Financial Hardship Management/td>
+                    <td><a href="#financial-use-case">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Healthcare</td>
+                    <td>Chronic Disease Management</td>
+                    <td><a href="#healthcare-use-case">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Manufacturing</td>
+                    <td>Production Line Setup</td>
+                    <td><a href="#manufacturing-use-case">View Details</a></td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+		
+		
+
+	    <!-- use caseFinancial Hardship Management -->
+        <section id="financial-use-case">
+            <div class="container">
+                <div class="section-header">
+				<h2>Autonomous Financial Hardship Treatment Planner (AFTP)</h2>
+				<button class="listenBtn" data-target="financial-use-case">🔊</button>
+				</div>
+                <div class="section-header">
+                    <h3>Scenario Overview</h3>
+                    <p>A bank or utility provider receives thousands of financial hardship assistance requests monthly through its digital customer portal. These could be for situations such as job loss, medical emergencies, disaster relief, or temporary income reduction.</P>
+					<p>The organization deploys an Agentic AI system — named “AFTP (Autonomous Financial Hardship Treatment Planner)” — to automate and optimize the handling, planning, and routing of these hardship cases.</p>
+					<p>The Agentic AI autonomously manages this complex goal by integrating data, tools, human workflows, and anticipatory planning.</p>
+					<p>The system accepts goal-based input from users or staff such as:"Evaluate this customer's submitted hardship request and assign the most suitable treatment plan." </p>
+
+                </div>
+				<h4>Agentic AI Capabilities in Action</h4>
+            <ol>
+                <li><strong>Goal Interpretation and Planning</strong> &nbsp; <i> (Capability: Planning) </i> <br>
+                    Goal: "Process John Doe hardship application submitted via the portal on June 18."<br>
+                    <p><strong>Planning Workflow:</strong> AFTP performs goal decomposition: </p>
+                    <ul>
+                        <li>Validate application completeness.</li>
+                        <li>Analyse income, debt, hardship reason, account type.</li>
+                        <li>Match with eligibility criteria across known hardship programs (e.g., deferral, reduced payments, write-offs).</li>
+                        <li>Choose optimal treatment plan.</li>
+                        <li>Create engagement plan (letters, reminders).</li>
+						<li>Log case in CRM and notify user.</li>
+                    </ul>
+                 </li>
+			
+                <br><li><strong>Reasoning</strong>&nbsp; <i> (Capability: Reasoning) </i> </br>
+                    <strong>Using financial reasoning, AFTP calculates</strong>
+                    <ul>
+                        <li>Disposable income.</li>
+                        <li>Payment-to-income ratio.</li>
+						<li>Historical repayment behaviour.</li>
+						<li>Customer vulnerability score.</li>
+						<li>Predictive impact of various treatments.</li>
+                    </ul>
+                    <strong>Example Reasoning:</strong>It then reasons with policies and LLM-based program constraints to select: "The customer is eligible for a 3-month interest deferral with partial payment suspension based on their net disposable income and recent job loss." If multiple plans are viable, AFTP ranks them based on risk-reduction score + customer preference history.
+<br>                 
+                </li>
+                <br><li><strong>Multi-System Interaction</strong>&nbsp; <i> (Capability: Tool Use) </i></br>
+                    <strong>AFTP orchestrates across multiple internal tools:</strong>
+                    <ul>
+                        <li>Eligibility Engine API: Confirms valid plans for income/assets profile.</li>
+                        <li>LLM-Powered Plan Generator: Refines recommended plan narrative.</li>
+                        <li>Case Manager Dashboard: Logs case, assigns worker (if needed).</li>
+                        <li>DocuSign Integration: Prepares customer acknowledgment forms.</li>
+						<li>Comms Engine: Sends email/SMS notifications.</li>
+						<li>Workforce Scheduler: Checks worker availability and workload.</li>
+                     </ul>
+
+                </li>
+                <br><li><strong>Reactivity</strong>&nbsp; <i> (Capability: Reactive) </i></br>
+                    <strong>Reactive Behaviour Examples:</strong>If customer replies "This treatment plan doesn’t work. I can only afford half of that." Or a case worker flags the case for plan override, AFTP re-evaluates in real time:
+                    <ul>
+                        <li>Re-processes eligibility using updated income.</li>
+                        <li>Suggests an alternative treatmen.</li>
+						<li>Logs the change and creates updated documentation automatically.</li>
+                    </ul>
+                    In addition, if new hardship programs are activated (e.g., government disaster relief), AFTP updates its logic reactively and re-screens open cases for eligibility.<br>
+
+                </li>
+                <br><li><strong>Proactivity: Anticipating Risks and Improving Efficiency.</strong></br>
+                    <strong>AFTP identifies edge cases such as:</strong>
+                    <ul>
+                        <li>Incomplete or conflicting information.</li>
+                        <li>No matching treatment plans.</li>
+                        <li>Prior abuse of hardship policies.</li>
+						<li>High predicted risk of non-adherence.</li>
+                    </ul>
+					<br>For such cases, it assigns to a human case worker, using proactive scheduling logic:</br>
+                    <br>"Assign Case #98432 to Senior Case Manager Jane Hill. Her current workload is 14 cases (threshold is 20), she is available (no leave), and has expertise with self-employed applicants."
+</br>
+                </li>
+            </ol>
+ 
+				
+                <div class="image-text-container">
+				  <div class="zoomable-image">
+						<img src="images/agenticAI-AFTP.png" alt="Autonomous Financial Hardship Treatment Planner">
+				  </div>
+                    <div class="text-content" id="manufacturing-arch">
+                        <div class="section-header">
+                            <h3>System Architecture Overview</h3>
+                        </div>
+                        <p>AFTP (Agentic AI Core) autonomously manages customer service workflows by integrating intelligent reasoning, dynamic planning, and system orchestration.</p>
+						<strong>Frontend Interfaces</strong>
+						<ul style="list-style-type:circle;">
+							<li>Customer Portal: Application intake and user interaction.</li>
+							<li>Case Manager UI: Staff interface for case review and intervention.</li>
+						</ul>
+						<strong>LLM Capabilities</strong>
+						<ul style="list-style-type:circle;">
+							<li>Interprets complex scenarios and edge cases.</li>
+							<li>Generates clear plan explanations and empathetic communications.</li>
+							<li>Crafts empathetic communications.</li>
+						</ul>
+						<strong>Backend Services</strong>
+						<ul style="list-style-type:circle;">
+							<li>Eligibility Rules API: Validates application criteria.</li>
+							<li>Plan Repository: Stores and retrieves service plans.</li>
+							<li>Case Assignment Engine: Routes complex cases to appropriate staff.</li>
+							<li>Document Generator: Produces customer-facing documents.</li>
+						</ul>
+						<strong>Data Sources</strong>
+						<ul style="list-style-type:circle;">
+							<li>CRM systems, historical financial records, and staff scheduling data (HR/leave systems).</li>
+						</ul>						
+                    </div>
+                </div>
+                <div class="image-text-container">
+					<div class="zoomable-image">
+						<img src="images/agenticAI-AFTP_LogicFlow.png" alt="Autonomous Financial Hardship Treatment Planner End-to-End Flow">
+						</div>
+                    <div class="text-content" id="manufacturing-flow">
+                        <div class="section-header">
+                            <h3>Example Flow (End-to-End)</h3>
+                            <button class="listenBtn" data-target="AFTP-flow">Listen</button>
+                        </div>
+						<ol>
+							<li> Goal Entry</li>
+							<ul style="list-style-type:circle;">
+								<li>Goal: "Process John Doe’s hardship request submitted via portal on June 18."</li>
+							</ul>	
+							<li>Goal Decomposition and Planning</li>
+							<ul style="list-style-type:circle;">
+								<li>Validate request (completeness, accuracy).</li>
+								<li>Assess financial data (income, debt, hardship cause).</li>
+								<li>Evaluate eligibility against all hardship programs.</li>
+								<li>Select optimal treatment plan.</li>
+								<li>Generate customer communication materials.</li>
+								<li>Log and assign case in CRM (if escalation needed).</li>
+								<li>Notify customer.</li>
+							</ul>
+							<li>Contextual Reasoning (Risk Identification)</li>
+							<ul style="list-style-type:circle;">
+								<li>Detects John recently lost a job → income dropped by 60%.</li>
+								<li>Analyses spending vs. debt ratios → high vulnerability.</li>
+								<li>References prior history → never missed a payment before.</li>
+								<li> Example:"Based on John's history, net income, and hardship cause, the 3-month interest deferral with partial suspension is most suitable."</li>
+								<li>Ranking and personalization: Ranks 3 candidate plans. Recommends top option aligned with customer profile + institutional risk guidelines.</li>
+							</ul>
+							<li>Multi-System Execution</li>
+							<ul style="list-style-type:circle;">
+								<li>Eligibility Engine API: Confirms valid programs based on latest income.</li>
+								<li>Plan Generator (LLM): Creates personalized treatment plan explanation.</li>
+								<li>CRM / Case Manager: Logs the case, auto-assigns to agent if needed.</li>
+								<li>Doc Generator (PDF/email): Generates plan documents for John.</li>
+								<li>Notification Engine: Sends email with plan details and consent form.</li>
+								<li>Scheduler: Ensures case manager Tim is notified if human review needed.</li>
+							</ul>
+							<li>Reactive Adjustments</li>
+							<ul style="list-style-type:circle;">
+								<li>John replies via email, "I can't afford this plan — my expenses are still too high."</li>
+								<b>AFTP responds by:</b>
+								<li>Recalculating eligibility with revised net disposable income.</li>
+								<li>Re-ranking alternative plans.</li>
+								<li>Issuing updated documents.</li>
+								<li>Sending new plan for digital acceptance.</li>
+								<br>Also monitors policy or program updates (e.g., new government hardship relief).</br>
+							</ul>
+							<li>Proactive Optimisation</li>
+							<ul style="list-style-type:circle;">
+								<li>Flags John’s case due to: Incomplete employer verification, recent large withdrawal not explained and mismatch in self-declared income vs. payroll data.</li>
+							</ul>
+							<li>Execution and Learning Loop</li>
+							<ul style="list-style-type:circle;">
+								<li>Logs all actions across systems: application intake, communication, decisions, and escalations and summarizes performance, and incorporates feedback into future plans.</li>
+								
+							</ul>							
+						</ol>
+					</div>
+                </div>
+            </div>
+        </section>
+		
+		    <!-- use case Healthcare -->
+        <section id="healthcare-use-case">
+            <div class="container">
+                <div class="section-header">
+				<h2>Autonomous Care Coordination Assistant for Chronic Disease Management</h2>
+				<button class="listenBtn" data-target="healthcare-use-case">🔊</button>
+				</div>
+                <div class="section-header">
+                    <h3>Scenario Overview</h3>
+                    <p>A hospital system implements an Agentic AI system named "MediNavigator" tasked with improving outcomes for patients with chronic conditions like diabetes and heart failure. A physician or care manager can issue high-level goals such as:</P>
+					<p>“Ensure optimal outpatient care coordination for all high-risk diabetic patients this month.”</p>
+					<p>The Agentic AI autonomously manages this complex goal by integrating data, tools, human workflows, and anticipatory planning.</p>
+
+                </div>
+				<h4>Agentic AI Capabilities in Action</h4>
+            <ol>
+                <li><strong>Goal Interpretation and Planning</strong> &nbsp; <i> (Capability: Planning) </i> <br>
+                    Goal: "Ensure optimal outpatient care coordination for all high-risk diabetic patients this month."<br>
+                    <p><strong>Planning Workflow:</strong> MediNavigator breaks the goal into sub-goals: </p>
+                    <ul>
+                        <li>Identify high-risk diabetic patients.</li>
+                        <li>Check current care plans and gaps.</li>
+                        <li>Schedule follow-ups and labs.</li>
+                        <li>Engage patients via preferred channels.</li>
+                        <li>Monitor adherence and flag risks.</li>
+                    </ul>
+                    <strong>Example Plan Output:</strong> "For 57 patients, schedule A1C tests within 10 days, confirm medication adherence via pharmacy integration, and ensure they have at least one touchpoint with care staff this month."<br>
+                    
+                </li>
+			
+                <br><li><strong>Reasoning with Patient Data</strong>&nbsp; <i> (Capability: Reasoning) </i> </br>
+                    <strong>Reasoning Tasks:</strong>
+                    <ul>
+                        <li>Integrates data from EHRs (Electronic Health Records) / EMRs (Electronic Medical Records), lab systems, and historical trends.</li>
+                        <li>Uses reasoning to determine risk scores and likelihood of complications.</li>
+                    </ul>
+                    <strong>Example Reasoning:</strong>"Patient X missed two follow-ups and has elevated glucose levels. Based on predictive risk modelling, they have a 72% chance of hospitalization within 30 days."<br>
+                    
+                </li>
+                <br><li><strong>Multi-System Interaction</strong>&nbsp; <i> (Capability: Tool Use) </i></br>
+                    <strong>Integrated Systems and Tools:</strong>
+                    <ul>
+                        <li>EHR /EMR Access to read/update records.</li>
+                        <li>Scheduling System to book nurse visits or telehealth sessions.</li>
+                        <li>Pharmacy API to verify medication pick-ups.</li>
+                        <li>Communication Platforms (e.g., SMS/email bots) to engage patients.</li>
+                     </ul>
+                    <strong>Example Tool Usage:</strong> MediNavigator schedules a mobile nurse visit, updates the care record, and notifies the caregiver via Slack integration.<br>
+
+                </li>
+                <br><li><strong>Reactivity to Real-Time Changes</strong>&nbsp; <i> (Capability: Reactive) </i></br>
+                    <strong>Reactive Behaviour Examples:</strong>
+                    <ul>
+                        <li>A lab result indicates a patient’s A1C has spiked dangerously.</li>
+                        <li>MediNavigator halts routine scheduling for that patient, flags the care manager, and proposes immediate triage action.</li>
+                    </ul>
+                    <strong>Sample Reactive Decision:</strong> "Urgent flag: Patient Z’s A1C is 10.3. Suggest immediate teleconsulting and insulin adjustment."<br>
+
+                </li>
+                <br><li><strong>Proactivity: Anticipating Risks and Improving Efficiency</strong></br>
+                    <strong>Proactive Behaviours:</strong>
+                    <ul>
+                        <li>Monitors patient engagement patterns.</li>
+                        <li>Notices a cluster of patients are consistently non-responsive to phone outreach.</li>
+                        <li>Suggests switching to contact next to kin or home visits.</li>
+						<li>Recommends updating outreach scripts based on sentiment analysis.</li>
+                    </ul>
+                    <strong>Example Proactive Strategy:</strong> "20% of elderly patients did not confirm appointments. Suggest shifting outreach to family caregivers and offer rideshare for transportation."<br>
+                </li>
+            </ol>
+ 				
+                <div class="image-text-container">
+				  <div class="zoomable-image">
+						<img src="images/agenticAI-MediNavigator.png" alt="MediNavigator Architecture">
+				  </div>
+                    <div class="text-content" id="manufacturing-arch">
+                        <div class="section-header">
+                            <h3>System Architecture Overview</h3>
+                        </div>
+                        <p>MediNavigator, an Agentic AI platform, orchestrates autonomous chronic care coordination by integrating across the following layers:</p>
+						<strong>Frontend Interfaces</strong>
+						<ul style="list-style-type:circle;">
+							<li>Care Manager Dashboard: Real-time patient insights and decision support<./li>
+							<li>Physician Command Centre: Goal input and care plan review..</li>
+							<li>Patient Engagement App: Multi-channel communication (SMS, email, mobile).</li>
+						</ul>
+						<strong>LLM Capabilities</strong>
+						<ul style="list-style-type:circle;">
+							<li>Interprets clinical goals.</li>
+							<li>Generates patient education content.</li>
+							<li>Crafts empathetic communications.</li>
+							<li>Explains care actions in clinician-friendly language.</li>
+						</ul>
+						<strong>Backend Services</strong>
+						<ul style="list-style-type:circle;">
+							<li>Care Plan Orchestration Engine: Translates goals into sub-tasks.</li>
+							<li>Risk Stratification Engine: Predicts risk based on clinical data.</li>
+							<li>Multi-Channel Scheduler: Manages appointments across modalities.</li>
+							<li>Adherence Monitoring Module: Tracks medication and engagement using external data.</li>
+						</ul>
+						<strong>External Systems and APIs</strong>
+						<ul style="list-style-type:circle;">
+							<li>EHR/EMR integration, lab data connectors, pharmacy APIs.</li>
+							<li>Communication channels (chat, email, SMS).</li>
+							<li>Transport and caregiver coordination services.</li>
+						</ul>
+						<strong>Data Sources</strong>
+						<ul style="list-style-type:circle;">
+							<li>Clinical records, behavioural engagement data, SDOH factors, and historical risk models.</li>
+						</ul>						
+                    </div>
+                </div>
+                <div class="image-text-container">
+					<div class="zoomable-image">
+						<img src="images/agenticAI-MediNavigator_LogicFlow.png" alt="MediNavigator End-to-End Flow">
+						</div>
+                    <div class="text-content" id="manufacturing-flow">
+                        <div class="section-header">
+                            <h3>Example Flow (End-to-End)</h3>
+                         </div>
+						<ol>
+							<li> Goal Entry</li>
+							<ul style="list-style-type:circle;">
+								<li>Physician submits goal via dashboard: "Ensure optimal outpatient care coordination for all high-risk diabetic patients this month."</li>
+							</ul>	
+							<li>Goal Decomposition and Planning</li>
+							<ul style="list-style-type:circle;">
+								<li>AI break’s goal into actionable tasks: patient identification, gap analysis, scheduling, communication, and monitoring.</li>
+							</ul>
+							<li>Contextual Reasoning (Risk Identification)</li>
+							<ul style="list-style-type:circle;">
+								<li>Aggregates EHR and lab data to flag 57 high-risk patients.</li>
+							</ul>
+							<li>Multi-System Execution</li>
+							<ul style="list-style-type:circle;">
+								<li>Schedules labs, confirms medication pickup, sends patient reminders.</li>
+							</ul>
+							<li>Reactive Adjustments</li>
+							<ul style="list-style-type:circle;">
+								<li>Flags urgent risk (e.g., critical lab result) and suggests immediate triage.</li>
+							</ul>
+							<li>Proactive Optimisation</li>
+							<ul style="list-style-type:circle;">
+								<li>Detects poor engagement patterns; recommends alternate contact methods, transport support, and messaging tone adjustments.</li>
+							</ul>
+							<li>Execution and Learning Loop</li>
+							<ul style="list-style-type:circle;">
+								<li>Logs actions in EMR, visualizes outcomes, and adapts future coordination strategies.</li>
+							</ul>							
+						</ol>
+					</div>
+                </div>
+            </div>
+        </section>	
+		
+		        <section id="manufacturing-use-case">
+            <div class="container">
+                <div class="section-header">
+				<h2>Agentic AI in Manufacturing: Production Line Setup</h2>
+				<button class="listenBtn" data-target="manufacturing-use-case">🔊</button>
+				</div>
+                <div class="section-header">
+                    <h3>Scenario Overview</h3>
+                    <p>Prepare Line 3 efficiently and accurately for a new product batch starting Monday, leveraging agentic AI to automate planning, decision-making, and real-time coordination across systems, teams, and resources.</P>
+                </div>
+				<h4>Agentic AI Capabilities in Action</h4>
+            <ol>
+                <li><strong>Goal Interpretation and Planning</strong> &nbsp; <i> (Capability: Planning) </i> <br>
+                    High-Level Goal: "Prepare Line 3 for the new product batch starting Monday."<br>
+                    <p><strong>Planning Workflow:</strong> ProdSync (agentic AI) dynamically breaks this abstract goal into precise, time-bound, resource-aware sub-tasks such as: </p>
+                    <ul>
+                        <li>Review product engineering specs for configuration data.</li>
+                        <li>Assess current state of Line 3 (e.g., availability, maintenance status).</li>
+                        <li>Develop an hourly plan to reconfigure equipment and calibrate sensors.</li>
+                        <li>Assign technicians and line operators for setup and quality checks.</li>
+                        <li>Reserve and validate required raw material inventory.</li>
+                    </ul>
+                    <strong>Example Plan Output:</strong> "Update PLC firmware on Conveyor 3 by Friday 4 PM; assign Technician Ruiz for sensor calibration Saturday; reserve 12,000 units of part X from Inventory Zone B by Sunday midnight."<br>
+                    
+                </li>
+			
+                <br><li><strong>Contextual Reasoning and Decision-Making</strong>&nbsp; <i> (Capability: Reasoning) </i> </br>
+                    <strong>Reasoning Tasks:</strong>
+                    <ul>
+                        <li>Matches engineering specifications with machine capabilities to ensure compatibility.</li>
+                        <li>Analyses workforce availability against labour laws, skill tags, and shift constraints.</li>
+                        <li>Detects schedule conflicts (e.g., another setup planned for the same line).</li>
+                        <li>Balances throughput targets with safety and compliance policies.</li>
+                    </ul>
+                    <strong>Example Reasoning:</strong> "Technician Maria has the required ISO calibration certification but is scheduled for night shift Sunday. Recommend swapping with certified Technician Ali for Saturday morning to meet the calibration deadline."<br>
+                    
+                </li>
+                <br><li><strong>Multi-System Interaction</strong>&nbsp; <i> (Capability: Tool Use) </i></br>
+                    <strong>Integrated Systems and Tools:</strong>
+                    <ul>
+                        <li>MES (Manufacturing Execution System) to execute line reconfiguration.</li>
+                        <li>ERP to reserve parts and materials.</li>
+                        <li>HR scheduling software to allocate personnel.</li>
+                        <li>Maintenance CMMS to initiate equipment servicing.</li>
+                        <li>IoT Platforms to read sensor data and track machine states.</li>
+                        <li>Communication systems (email, Slack, SMS) to notify stakeholders.</li>
+                    </ul>
+                    <strong>Example Tool Usage:</strong> ProdSync retrieves the product BOM (Bill of Materials) from the PLM (Product Lifecycle Management) system, reserves parts in SAP ERP, initiates a calibration task in the CMMS (Computerised Maintenance Management System), updates the production status dashboard, and notifies the line supervisor via Microsoft Teams.<br>
+
+                </li>
+                <br><li><strong>Reactivity to Real-Time Changes</strong>&nbsp; <i> (Capability: Reactive) </i></br>
+                    <strong>Reactive Behaviour Examples:</strong>
+                    <ul>
+                        <li>If the supplier reports a delivery delay for critical parts: ProdSync reschedules line prep, reallocates tasks, and sends alerts.</li>
+                        <li>If a machine fails diagnostics: The AI halts further setup, reassigns tasks, and triggers a maintenance workflow.</li>
+                    </ul>
+                    <strong>Sample Reactive Decision:</strong> "Part #492 from Supplier X delayed by 36 hours. Switching to backup vendor and updating task timeline. Estimated new setup completion: Monday 10 AM."<br>
+
+                </li>
+                <br><li><strong>Proactivity: Anticipating Risks and Improving Efficiency</strong></br>
+                    <strong>Proactive Behaviours:</strong>
+                    <ul>
+                        <li>Predicts labour shortages based on past absenteeism data and recommends shift adjustments.</li>
+                        <li>Detects that a sensor has not been recalibrated in 60 days and schedules preventive maintenance.</li>
+                        <li>Identifies past delays in similar product batches and front-loads high-risk tasks.</li>
+                    </ul>
+                    <strong>Example Proactive Strategy:</strong> "Historical setup time for similar products exceeded target by 12%. Suggest initiating pre-setup checks 1 day earlier and assigning an experienced operator to reduce rework risk."<br>
+                </li>
+            </ol>
+				
+                <div class="image-text-container">
+				  <div class="zoomable-image">
+						<img src="images/agenticAI-ProdSync.png" alt="ProdSync System Architecture">
+				  </div>
+					<!-- <img src="images/agenticAI-ProdSync.png" alt="ProdSync System Architecture"> -->			
+                    <div class="text-content" id="manufacturing-arch">
+                        <div class="section-header">
+                            <h3>System Architecture Overview</h3>
+                            <!-- <button class="listenBtn" data-target="manufacturing-arch">Listen</button> -->
+                        </div>
+                        <p>ProdSync, an Agentic AI system, autonomously manages manufacturing line preparation by integrating planning, execution, and coordination across systems and teams.</p>
+						<strong>Frontend Interfaces</strong>
+						<ul style="list-style-type:circle;">
+							<li>Supervisor Console: Goal input, schedule review, task approvals.</li>
+							<li>Operator Dashboard: Real-time task guidance and alerts.</li>
+							<li>Technician App: Mobile task assignments and confirmations.</li>
+						</ul>
+						<strong>LLM Capabilities</strong>
+						<ul style="list-style-type:circle;">
+							<li>Translates high-level goals into operational plans.</li>
+							<li>Generates task breakdowns and contingency options.</li>
+							<li>Crafts contextual stakeholder communications.</li>
+							<li>Provides rationale for decisions and task assignments.</li>
+						</ul>
+						<strong>Backend Services</strong>
+						<ul style="list-style-type:circle;">
+							<li>Task Scheduler: Converts goals into sequenced actions.</li>
+							<li>Constraint Resolver: Ensures compliance with labour, machine, and material constraints.</li>
+							<li>Risk Analyzer: Identifies bottlenecks and historical setup risks.</li>
+							<li>Execution Tracker: Monitors MES, ERP, and IoT progress in real time.</li>
+						</ul>
+						<strong>External Systems and APIs</strong>
+						<ul style="list-style-type:circle;">
+							<li>MES: Executes line reconfiguration.</li>
+							<li>PLM: Supplies product specs and BOMs.</li>
+							<li>ERP: Manages inventory reservations.</li>
+							<li>HR Systems: Validates technician skills and schedules.</li>
+							<li>CMMS: Triggers maintenance and calibration tasks.</li>
+							<li>Communication Tools: Sends alerts via Teams, email, or SMS.</li>
+						</ul>
+						<strong>Data Sources</strong>
+						<ul style="list-style-type:circle;">
+							<li>Product engineering specs, BOMs.</li>
+							<li>Setup history and performance benchmarks.</li>
+							<li>Machine logs and calibration data.</li>
+							<li>Workforce availability and skill mapping.</li>
+							<li>Real-time inventory levels.</li>
+						</ul>						
+                    </div>
+                </div>
+                <div class="image-text-container">
+					<div class="zoomable-image">
+						<img src="images/agenticAI-ProdSync_LogicFlow.png" alt="ProdSync End-to-End Flow">
+						</div>
+                    <div class="text-content" id="manufacturing-flow">
+                        <div class="section-header">
+                            <h3>Example Flow (End-to-End)</h3>
+                        </div>
+						<ol>
+							<li> Goal Entry</li>
+							<ul style="list-style-type:circle;">
+								<li> Supervisor inputs goal into ProdSync "prepare Line 3 for the new product batch starting Monday."</li>
+							</ul>	
+							<li>Goal Decomposition and Planning</li>
+							<ul style="list-style-type:circle;">
+								<li>AI plans tasks such as checking equipment readiness, scheduling calibration, assigning technicians, and reserving inventory</li>
+								<li>Output: "Update PLC firmware by Friday; assign calibration to technician Smith on Saturday; reserve 12,000 units of part X by Sunday".</li>
+							</ul>
+							<li>Contextual Reasoning</li>
+							<ul style="list-style-type:circle;">
+								<li>Detects shift conflict and recommends reassignment: "Assign to technician Alex for Saturday morning calibration".</li>
+							</ul>
+							<li>Multi-System Execution</li>
+							<ul style="list-style-type:circle;">
+								<li>Retrieves BOM, reserves parts, initiates setup tasks, triggers calibration, and notifies supervisor.</li>
+							</ul>
+							<li>Reactive Adjustments</li>
+							<ul style="list-style-type:circle;">
+								<li>Supplier delay detected → switches to backup vendor, adjusts timelines, notifies supervisor of new Monday 10 AM target.</li>
+							</ul>
+							<li>Proactive Risk Mitigation</li>
+							<ul style="list-style-type:circle;">
+								<li>Based on historical delays, reschedules calibration earlier and assigns senior operator to prevent rework.</li>
+							</ul>
+							<li>Execution and Learning Loop</li>
+							<ul style="list-style-type:circle;">
+								<li>Logs all actions, confirms completion via operator apps, summarizes performance, and incorporates feedback into future plan.</li>
+							</ul>							
+						</ol>
+					</div>
+                </div>
+            </div>
+        </section>
+		
+        <!-- Comparison Tables -->
+        <section id="comparison">
+            <div class="section-header">
+                <h3>Highlevel comparison of Gen AI System Types</h3>
+                <button class="listenBtn" data-target="comparison">🔊</button>
+            </div>
+            <table class="genai-categories">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Reactive</th>
+                        <th>Tool Use</th>
+                        <th>Reasoning</th>
+                        <th>Planning</th>
+                        <th>Proactivity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-label="Type">RAG-enabled Gen AI</td><td data-label="Reactive">Yes</td><td data-label="Tool Use">No</td><td data-label="Reasoning">No</td><td data-label="Planning">No</td><td data-label="Proactivity">No</td></tr>
+                    <tr><td data-label="Type">Tool-Augmented Gen AI</td><td data-label="Reactive">Yes</td><td data-label="Tool Use">Yes</td><td data-label="Reasoning">No</td><td data-label="Planning">No</td><td data-label="Proactivity">No</td></tr>
+                    <tr><td data-label="Type">Agentic AI Gen AI</td><td data-label="Reactive">Yes</td><td data-label="Tool Use">Yes</td><td data-label="Reasoning">Yes</td><td data-label="Planning">Yes</td><td data-label="Proactivity">Yes</td></tr>
+                </tbody>
+            </table>
+		</section>
+			
+		<section id="full-comparison">	
+		 <div class="section-header">
+            <h3>Detailed Comparison of Gen AI System Types</h3>
+		<button class="listenBtn" data-target="full-comparison">🔊</button>
+            </div>	
+            <table class="genai-categories">
+                <thead>
+                    <tr>
+                        <th>Feature / Capability</th>
+                        <th>RAG-Enabled Gen AI</th>
+                        <th>Tool-Augmented Gen AI</th>
+                        <th>Agentic AI Gen AI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-label="Feature / Capability">Reactive Q&A</td><td data-label="RAG-Enabled Gen AI"> Yes</td><td data-label="Tool-Augmented Gen AI">Yes</td><td data-label="Agentic AI Gen AI">Yes</td></tr>
+                    <tr><td data-label="Feature / Capability">Information Retrieval</td><td data-label="RAG-Enabled Gen AI">Yes (e.g., from documents)</td><td data-label="Tool-Augmented Gen AI">Yes</td><td data-label="Agentic AI Gen AI">Yes</td></tr>
+                    <tr><td data-label="Feature / Capability">Tool / API Integration</td><td data-label="RAG-Enabled Gen AI">No</td><td data-label="Tool-Augmented Gen AI">Yes</td><td data-label="Agentic AI Gen AI">Yes</td></tr>
+                    <tr><td data-label="Feature / Capability">Autonomous Decision-Making</td><td data-label="RAG-Enabled Gen AI">No</td><td data-label="Tool-Augmented Gen AI">No</td><td data-label="Agentic AI Gen AI">Yes</td></tr>
+                    <tr><td data-label="Feature / Capability">Multi-Step Reasoning</td><td data-label="RAG-Enabled Gen AI">No</td><td data-label="Tool-Augmented Gen AI">No</td><td data-label="Agentic AI Gen AI">Yes</td></tr>
+                    <tr><td data-label="Feature / Capability">Goal-Oriented Planning</td><td data-label="RAG-Enabled Gen AI">No</td><td data-label="Tool-Augmented Gen AI">No</td><td data-label="Agentic AI Gen AI">Yes</td></tr>
+                    <tr><td data-label="Feature / Capability">Task Execution</td><td data-label="RAG-Enabled Gen AI">No</td><td data-label="Tool-Augmented Gen AI">Partial (user-prompted)</td><td data-label="Agentic AI Gen AI">Full (self-driven)</td></tr>
+                    <tr><td data-label="Feature / Capability">Proactive Behaviour</td><td data-label="RAG-Enabled Gen AI">No</td><td data-label="Tool-Augmented Gen AI">No</td><td data-label="Agentic AI Gen AI">Yes</td></tr>
+                    <tr><td data-label="Feature / Capability">Contextual Memory Use</td><td data-label="RAG-Enabled Gen AI">No</td><td data-label="Tool-Augmented Gen AI">Limited (short context)</td><td data-label="Agentic AI Gen AI">Long- and Short-term memory possible</td></tr>
+                </tbody>
+            </table>
+		</section>
+		
+		<section id="decision-guide">
+		 <div class="section-header">
+            <h3>Decision Guide Selecting the Right Gen AI System</h3>
+			<button class="listenBtn" data-target="decision-guide">🔊</button>
+         </div>
+            <table class="genai-categories">
+                <thead>
+                    <tr>
+                        <th>Decision Criteria</th>
+                        <th>RAG-Enabled Gen AI</th>
+                        <th>Tool-Augmented Gen AI</th>
+                        <th>Agentic AI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-label="Decision Criteria">Nature of Task</td><td data-label="RAG-Enabled Gen AI">Static, factual, and document-based inquiries</td><td data-label="Tool-Augmented Gen AI">Actionable queries requiring access to live systems</td><td data-label="Agentic AI">Complex, goal-driven workflows requiring orchestration</td></tr>
+                    <tr><td data-label="Decision Criteria">Business Need</td><td data-label="RAG-Enabled Gen AI">Automate FAQs, policy access, knowledge search</td><td data-label="Tool-Augmented Gen AI">Automate operational tasks with human prompts</td><td data-label="Agentic AI">Automate multi-step processes with autonomy</td></tr>
+                    <tr><td data-label="Decision Criteria">Interactivity Required</td><td data-label="RAG-Enabled Gen AI">One-shot Q&A</td><td data-label="Tool-Augmented Gen AI">Single-step tool interaction</td><td data-label="Agentic AI">Multi-step, dynamic conversations</td></tr>
+                    <tr><td data-label="Decision Criteria">Tool/API Integration</td><td data-label="RAG-Enabled Gen AI">Not required</td><td data-label="Tool-Augmented Gen AI">Required for simple actions</td><td data-label="Agentic AI">Required for full autonomy and orchestration</td></tr>
+                    <tr><td data-label="Decision Criteria">Decision Autonomy</td><td data-label="RAG-Enabled Gen AI">None</td><td data-label="Tool-Augmented Gen AI">Human-in-loop for decisions</td><td data-label="Agentic AI">AI takes initiative and makes decisions</td></tr>
+                    <tr><td data-label="Decision Criteria">Planning & Reasoning Complexity</td><td data-label="RAG-Enabled Gen AI">None</td><td data-label="Tool-Augmented Gen AI">Minimal</td><td data-label="Agentic AI">High (includes context, memory, and planning)</td></tr>
+                    <tr><td data-label="Decision Criteria">Cost & Implementation Complexity</td><td data-label="RAG-Enabled Gen AI">Low (lightweight, fast deployment)</td><td data-label="Tool-Augmented Gen AI">Medium (requires integration work)</td><td data-label="Agentic AI">High (infrastructure, safety, and orchestration)</td></tr>
+                    <!-- <tr><td data-label="Decision Criteria">Best Fit For</td><td data-label="RAG-Enabled Gen AI">Knowledge bases, customer support, compliance helpdesks</td><td data-label="Tool-Augmented Gen AI">Finance, operations, IT support</td><td data-label="Agentic AI">Logistics, HR workflows, onboarding, IT automation</td></tr> -->
+                    <tr><td data-label="Decision Criteria">Risk/Compliance Sensitivity</td><td data-label="RAG-Enabled Gen AI">Low</td><td data-label="Tool-Augmented Gen AI">Medium</td><td data-label="Agentic AI">High (needs guardrails and auditing)</td></tr>
+                </tbody>
+            </table>
+        </section>
+		
+		<!-- interactive decision-guide -->
+<section id="decision-guide">
+  <div class="section-header">
+    <h3>Interactive Decision Guide - Selecting the Right Gen AI System</h3>    
+  </div>
+
+  <div id="decision-tree">
+    <form id="decision-form">
+      <div class="question animated">
+        <label for="task">1. What is the nature of your task?</label>
+        <select id="task" required>
+          <option value="">-- Choose an option --</option>
+          <option value="rag">Static, factual, document-based</option>
+          <option value="tool">Actionable, needs live system</option>
+          <option value="agent">Complex, goal-driven workflows</option>
+        </select>
+      </div>
+
+      <div class="question animated">
+        <label for="interactivity">2. How interactive should the system be?</label>
+        <select id="interactivity" required>
+          <option value="">-- Choose an option --</option>
+          <option value="rag">One-shot Q&A</option>
+          <option value="tool">Single-step interaction</option>
+          <option value="agent">Multi-step, dynamic conversation</option>
+        </select>
+      </div>
+
+      <div class="question animated">
+        <label for="autonomy">3. What level of decision autonomy is required?</label>
+        <select id="autonomy" required>
+          <option value="">-- Choose an option --</option>
+          <option value="rag">No autonomy, manual decisions</option>
+          <option value="tool">Human-in-loop decisions</option>
+          <option value="agent">Full autonomy, AI makes decisions</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submitBtn">Recommend</button>
+    </form>
+
+    <div id="result-container" class="animated hidden">
+      <h4>Recommended Gen AI System:</h4>
+      <p id="result-text"></p>
+      <button onclick="restart()" class="restartBtn">🔁 Start Over</button>
+    </div>
+  </div>
+</section>
+
+
+    </main>
+
+  <button id="topBtn" class="top-link" onclick="scrollToTop()">⬆ Top of Page</button>
+
+  <footer>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/kumar-np" target="_blank" class="footer-link">Kumar N.P <img src="images/elephant_face_blue_graident.png" alt="gaja" title="gaja" height="30" width="30" /></a></p>
+  </footer>
+
+
+    <script src="scripts/script.js"></script>
