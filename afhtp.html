@@ -102,7 +102,7 @@
     }
     .image-container {
       position: relative;
-      overflow: auto; /* hidden */
+      overflow: hidden
       width: 100%;
       max-width: 100%;
       display:flex;
@@ -110,19 +110,6 @@
       justify-content:center;
       touch-action: none;
     }
-	.image-container img {
-	  height: auto;
-	  width: auto;
-	  max-width: none;
-	  max-height: none;
-	  transform-origin: top left; /* optional: improves scroll feel */
-	  user-select: none;
-	  pointer-events: none;
-	  will-change: transform;
-	  display: block;
-	}
-
-	/*
     .image-container img {
       max-width: 100%;
       max-height: calc(100vh - 180px);
@@ -134,7 +121,7 @@
       will-change: transform;
       display:block;
     }
-	*/
+	
     .caption {
       margin-top:0.5rem;
       font-size:0.9rem;
@@ -246,6 +233,7 @@
           />
           <div class="zoom-controls" aria-label="Zoom controls">
             <button aria-label="Zoom out" class="zoom-out">−</button>
+			<input type="range" min="0.5" max="1.0" step="0.01" value="0.85" class="zoom-slider" aria-label="Zoom level slider" />
             <input type="range" min="0.5" max="3" step="0.01" value="1" class="zoom-slider" aria-label="Zoom level slider" />
             <button aria-label="Zoom in" class="zoom-in">+</button>
             <button aria-label="Reset zoom" class="zoom-reset" title="Reset">⟳</button>
@@ -338,9 +326,9 @@
       // Reset zoom on the newly active panel
       const activePanel = panels[targetKey];
       activePanel.querySelectorAll('.zoom-slider').forEach(s => {
-        s.value = 1;
+        s.value = 0.85;
         const container = s.closest('.image-container');
-        setZoom(container, 1);
+        setZoom(container, 0.85);
       });
     }
 
@@ -375,8 +363,13 @@
       img.style.transform = `scale(${scale})`;
       const label = container.querySelector('.zoom-percent');
       if (label) label.textContent = Math.round(scale * 100) + '%';
-      const slider = container.querySelector('.zoom-slider');
-      if (slider) slider.value = scale;
+      const slider = container.querySelector('.zoom-slider');    
+	  if (slider) {
+		  slider.value = scale;
+		  slider.min = minScale;
+		  slider.max = maxScale;
+	  }
+
     }
 
     function clamp(value, min, max) {
@@ -385,9 +378,9 @@
 
     // Initialize zoom controls
     document.querySelectorAll('.image-container').forEach(container => {
-      let currentScale = 1;
+      let currentScale = 0.85;
       const minScale = 0.5;
-      const maxScale = 3;
+      const maxScale = 1.0;
       const zoomInBtn = container.querySelector('.zoom-in');
       const zoomOutBtn = container.querySelector('.zoom-out');
       const resetBtn = container.querySelector('.zoom-reset');
@@ -407,7 +400,7 @@
       }
       if (resetBtn) {
         resetBtn.addEventListener('click', () => {
-          currentScale = 1;
+          currentScale = 0.85;
           setZoom(container, currentScale);
         });
       }
@@ -456,7 +449,7 @@
     });
   </script>
   
-  <script>
+  <!-- <script>
   // Notify Streamlit about current height (works best if you use a large height in Streamlit)
   function sendHeightToParent() {
     const height = document.body.scrollHeight;
@@ -475,7 +468,7 @@
       setTimeout(sendHeightToParent, 300); // Delay for DOM updates
     });
   });
-</script>
+</script> -->
 
 </body>
 </html>
