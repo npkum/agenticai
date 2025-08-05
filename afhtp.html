@@ -102,7 +102,7 @@
     }
     .image-container {
       position: relative;
-      overflow: hidden;
+      overflow: auto; /* hidden */
       width: 100%;
       max-width: 100%;
       display:flex;
@@ -110,6 +110,19 @@
       justify-content:center;
       touch-action: none;
     }
+	.image-container img {
+	  height: auto;
+	  width: auto;
+	  max-width: none;
+	  max-height: none;
+	  transform-origin: top left; /* optional: improves scroll feel */
+	  user-select: none;
+	  pointer-events: none;
+	  will-change: transform;
+	  display: block;
+	}
+
+	/*
     .image-container img {
       max-width: 100%;
       max-height: calc(100vh - 180px);
@@ -121,6 +134,7 @@
       will-change: transform;
       display:block;
     }
+	*/
     .caption {
       margin-top:0.5rem;
       font-size:0.9rem;
