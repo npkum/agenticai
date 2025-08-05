@@ -441,5 +441,27 @@
       });
     });
   </script>
+  
+  <script>
+  // Notify Streamlit about current height (works best if you use a large height in Streamlit)
+  function sendHeightToParent() {
+    const height = document.body.scrollHeight;
+    window.parent.postMessage({ type: 'resize', height: height }, '*');
+  }
+
+  // Trigger after page load
+  window.addEventListener('load', sendHeightToParent);
+  
+  // Trigger after tab switch or zoom interaction
+  const observeResize = new ResizeObserver(sendHeightToParent);
+  observeResize.observe(document.body);
+
+  document.querySelectorAll('.zoom-slider, .zoom-in, .zoom-out, .zoom-reset, .tab').forEach(el => {
+    el.addEventListener('click', () => {
+      setTimeout(sendHeightToParent, 300); // Delay for DOM updates
+    });
+  });
+</script>
+
 </body>
 </html>
