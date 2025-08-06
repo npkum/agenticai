@@ -10,6 +10,7 @@
       --fg: #1e1e1e;
       --accent: #2f6fdb;
       --radius: 6px;
+      --shadow: 0 6px 18px rgba(0,0,0,0.08);
       --control-bg: rgba(255,255,255,0.95);
       font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     }
@@ -160,14 +161,6 @@
       width: 80px;
     }
 
-    [role="tabpanel"] {
-      display: none;
-    }
-
-    [role="tabpanel"]:not([hidden]) {
-      display: block;
-    }
-
     .back-to-top {
       position: fixed;
       bottom: 20px;
@@ -179,21 +172,21 @@
       border-radius: 50%;
       cursor: pointer;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      font-size: 18px;
-      z-index: 999;
-      <!-- display: none; -->
-	  opacity: 0;
-	  visibility: hidden;
-	  transition: opacity 0.3s ease;
+      font-size: 16px;
+      z-index: 99;
+      display: none;
     }
-	
-	.back-to-top.show {
-	  opacity: 1;
-	  visibility: visible;
-	}
 
     .back-to-top:hover {
       background: #1d4db7;
+    }
+
+    [role="tabpanel"] {
+      display: none;
+    }
+
+    [role="tabpanel"]:not([hidden]) {
+      display: block;
     }
   </style>
 </head>
@@ -207,7 +200,7 @@
     </svg>
     AFHTP Architecture
   </div>
-  <nav>
+  <nav role="tablist" aria-label="Architecture diagrams">
     <button class="tab active" data-target="overview">Overview</button>
     <button class="tab" data-target="hardship">Hardship</button>
     <button class="tab" data-target="system">System</button>
@@ -228,7 +221,7 @@
         </div>
       </div>
     </div>
-    <div class="caption">Figure: Overview of the Agentic AI system showing high-level components and interactions.</div>
+    <div class="caption">Overview of the Agentic AI system showing high-level components.</div>
   </section>
 
   <section id="panel-hardship" role="tabpanel" hidden>
@@ -244,7 +237,7 @@
         </div>
       </div>
     </div>
-    <div class="caption">Figure: AFHTP workflow outlining decision paths, scoring, and assignment rules.</div>
+    <div class="caption">Hardship Case Assignment Logic with decision paths and rules.</div>
   </section>
 
   <section id="panel-system" role="tabpanel" hidden>
@@ -260,7 +253,7 @@
         </div>
       </div>
     </div>
-    <div class="caption">Figure: Full System Architecture with services, data flows, and infrastructure layers.</div>
+    <div class="caption">System architecture showing services, data flows and infrastructure.</div>
   </section>
 </main>
 
@@ -322,19 +315,10 @@
     });
   });
 
-  // Back to Top logic
+  // Back to Top
   const backToTop = document.getElementById('backToTop');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      <!-- backToTop.style.display = 'block'; -->
-	  backToTop.classList.add('show')
-    } else {
-      <!-- backToTop.style.display = 'none'; -->
-	  backToTop.classList.remove('show')
-    }
-  });
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    backToTop.style.display = window.scrollY > 50 ? 'block' : 'none';
   });
 </script>
 </body>
