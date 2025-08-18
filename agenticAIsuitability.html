@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI Suitability Framework</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Agentic AI Suitability Framework</h1>
+        <div class="tts-controls">
+            <button class="listenBtn" data-target="introduction,key-factors,why-factors-matter,critical-factors,executive-guidance,framework,decision-tool">🔊 Listen to Article</button>
+            <button id="pauseBtn" disabled>⏸ Pause</button>
+            <button id="resumeBtn" disabled>▶ Resume</button>
+            <button id="stopBtn" disabled>⏹ Stop</button>
+            <span id="speechStatus"></span>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#key-factors">Key Factors</a>
+        <a href="#why-factors-matter">Why Key Factors Matter</a>
+        <a href="#critical-factors">Critical Factors</a>
+        <a href="#executive-guidance">Executive Guidance</a>
+        <a href="#framework">Framework</a>
+        <a href="#" onclick="openDecisionTool()">Decision Tool</a>
+    </nav>
+
+    <main>
+        <section id="introduction">
+            <div class="section-header">
+                <h2>Introduction</h2>
+                <button class="listenBtn" data-target="introduction">🔊</button>
+            </div>
+            <p>While much of the conversation around Agentic AI focuses on its capabilities and potential benefits, it is equally important to understand where its use may be unsuitable. Deploying LLM-driven AI agents in the wrong context—such as areas requiring immediate real-time control, high-stakes human judgment, or guaranteed transparency—can introduce operational, compliance, or reputational risks that outweigh the benefits. By identifying these “do-not-use” scenarios in advance, organizations can make informed, risk-aware decisions and ensure that AI adoption aligns with both business objectives and governance standards.</p>
+        </section>
+
+        <section id="key-factors">
+            <div class="section-header">
+                <h2>Key Factors in the Agentic AI Suitability Framework</h2>
+                <button class="listenBtn" data-target="key-factors">🔊</button>
+            </div>
+            <p>When deciding to use Agentic AI for decision-making (e.g., using LLMs to make autonomous choices), these factors help to identify scenarios with high risk or low business value:</p>
+            <ul>
+                <li>Operational Costs</li>
+                <li>Human Impact</li>
+                <li>Real-time Requirements</li>
+                <li>Transparency</li>
+                <li>Integration Complexity</li>
+                <li>Data Sensitivity</li>
+                <li>Governance Requirements</li>
+                <li>Security Implications</li>
+            </ul>
+        </section>
+
+        <section id="why-factors-matter">
+            <div class="section-header">
+                <h2>Why These Factors Matter for Deciding Agentic AI</h2>
+                <button class="listenBtn" data-target="why-factors-matter">🔊</button>
+            </div>
+            <h3>1. Operational Costs</h3>
+            <p>AI agents, especially LLM-powered ones, can incur high operational expenses from compute, API calls, retraining, and integration. In high-frequency or always-on decision-making, these costs can quickly exceed the business value delivered.</p>
+            <h3>2. Human Impact</h3>
+            <p>Some interactions demand emotional intelligence, empathy, and trust-building—qualities AI still cannot truly replicate. Removing humans from these touchpoints can erode customer relationships and harm brand reputation.</p>
+            <h3>3. Real-time Requirements</h3>
+            <p>LLM-based agents are not optimized for ultra-low latency, high-throughput environments. In scenarios where milliseconds matter (e.g., manufacturing controls, high-frequency trading), delayed or inconsistent responses can cause safety hazards or losses.</p>
+            <h3>4. Transparency</h3>
+            <p>Agentic AI may make decisions without clear, traceable reasoning. This is a serious concern in regulated industries or customer-facing decisions, where explanations are essential for compliance and trust.</p>
+            <h3>5. Integration Complexity</h3>
+            <p>Many enterprises operate on a patchwork of legacy and modern systems. Complex integrations can cause delays, higher costs, and unstable performance, especially when AI needs to operate across multiple platforms.</p>
+            <h3>6. Data Sensitivity</h3>
+            <p>AI agents are only as good as the data they rely on. Incomplete, outdated, or biased data leads to flawed decisions, wasted resources, and possible compliance violations.</p>
+            <h3>7. Governance Requirements</h3>
+            <p>Without clear policies, monitoring, and escalation paths, AI agents can take actions that conflict with company rules, legal requirements, or ethical standards—sometimes without anyone noticing until it’s too late.</p>
+            <h3>8. Security Implications</h3>
+            <p>Autonomous decision-making opens new attack surfaces. If an AI agent has access to sensitive systems, attackers may trick it into unsafe actions or extract confidential data.</p>
+        </section>
+
+<section id="critical-factors">
+    <div class="section-header">
+        <h2>Critical Factors for Assessing Agentic AI Fit</h2>
+        <button class="listenBtn" data-target="critical-factors">🔊</button>
+    </div>
+
+    <div class="critical-grid">
+        <div class="critical-card">
+            <h3>1. Costs</h3>
+            <p class="scenario"><strong>Scenario:</strong> A mid-sized retail chain uses an LLM-powered AI agent to autonomously negotiate supplier contracts. The agent incurs high API usage costs from constant model queries, plus large expenses for integration and retraining.</p>
+            <hr class="divider">
+			<p class="risk"><strong>Risk:</strong> Agentic AI can create runaway operational costs if decision-making is continuous, high-frequency, or data-intensive.</p>
+            <hr class="divider">
+			<p class="alternative"><strong>Alternative:</strong> Use a rules-based automation system for routine contract renewals and only involve a human in complex negotiations.</p>
+            <hr class="divider">
+			<p class="mitigation"><strong>Mitigation:</strong> Implement cost-governance controls — limit API calls, use budget caps, and introduce checkpoints where a human must approve further actions.</p>
+        </div>
+
+        <div class="critical-card">
+            <h3>2. Human Impact</h3>
+            <p class="scenario"><strong>Scenario:</strong>A hospital replaces its patient liaison role with an AI agent that autonomously handles complaint resolution and emotional support for families.</p>
+            <hr class="divider">
+			<p class="risk"><strong>Risk:</strong> AI can’t truly empathize, read subtle emotional cues, or build trust in sensitive situations — harming relationships.</p>
+            <hr class="divider">
+			<p class="alternative"><strong>Alternative:</strong> Use AI only as a support tool — suggest responses, provide quick facts, or prepare case summaries — while a human leads the conversation.</p>
+            <hr class="divider">
+			<p class="mitigation"><strong>Mitigation:</strong> Set boundaries where AI escalates to a human for emotionally charged or sensitive topics, ensuring human oversight in final communications.</p>
+        </div>
+
+        <div class="critical-card">
+            <h3>3. Real-time Requirements</h3>
+            <p class="scenario"><strong>Scenario:</strong> An AI agent is used to control a manufacturing robot on a high-speed assembly line, making split-second adjustments based on sensor data.</p>
+            <hr class="divider">
+			<p class="risk"><strong>Risk:</strong>LLM-based decision-making has latency and may not process millisecond-level events reliably, risking safety and production quality.</p>
+            <hr class="divider">
+			<p class="alternative"><strong>Alternative:</strong>Use real-time control systems (e.g., PLCs (Programmable Logic Controllers) or edge AI models) that are optimized for low latency and deterministic performance.</p>
+            <hr class="divider">
+			<p class="mitigation"><strong>Mitigation:</strong>Limit its role to offline optimization — analysing production logs to suggest efficiency improvements — rather than controlling real-time actions.</p>
+        </div>
+
+        <div class="critical-card">
+            <h3>4. Transparency</h3>
+            <p class="scenario"><strong>Scenario:</strong>A financial services firm uses an AI agent to autonomously approve or reject small business loan applications.</p>
+            <hr class="divider">
+			<p class="risk"><strong>Risk:</strong> LLM-based decisions can be hard to explain, making it impossible to justify rejections to regulators or customers.</p>
+            <hr class="divider">
+			<p class="alternative"><strong>Alternative:</strong> Use structured scoring systems with transparent criteria.</p>
+            <hr class="divider">
+			<p class="mitigation"><strong>Mitigation:</strong> Add decision logging and explanation layers — store reasoning steps, generate human-readable justifications, and enable audit trails.</p>
+        </div>
+
+        <div class="critical-card">
+            <h3>5. Integration Complexity</h3>
+            <p class="scenario"><strong>Scenario:</strong> A logistics company tries to integrate an AI agent into 15 different legacy systems for shipment tracking, customs processing, and invoicing.</p>
+            <hr class="divider">
+			<p class="risk"><strong>Risk:</strong> Integration complexity causes delays, data mismatches, and extra maintenance costs, outweighing the benefits.</p>
+            <hr class="divider">
+			<p class="alternative"><strong>Alternative:</strong> Start with point-specific automation — e.g., AI-assisted invoice processing — before attempting multi-system autonomy.</p>
+            <hr class="divider">
+			<p class="mitigation"><strong>Mitigation:</strong> Adopt modular integration — connect the agent through APIs or middleware that can be swapped without touching all legacy systems at once.</p>
+        </div>
+
+        <div class="critical-card">
+            <h3>6. Data Sensitivity</h3>
+            <p class="scenario"><strong>Scenario:</strong>A marketing firm’s AI agent uses incomplete customer profiles and outdated sales data to generate automated ad campaigns.</p>
+            <hr class="divider">
+			<p class="risk"><strong>Risk:</strong> Poor data quality leads to wrong targeting, wasted spend, and reputational damage.</p>
+            <hr class="divider">
+			<p class="alternative"><strong>Alternative:</strong>Use data cleansing and validation pipelines before AI involvement; consider simpler analytics for low-confidence datasets.</p>
+            <hr class="divider">
+			<p class="mitigation"><strong>Mitigation:</strong> Implement data quality gates — the agent should verify freshness, completeness, and accuracy before acting on data.</p>
+        </div>
+
+        <div class="critical-card">
+            <h3>7. Governance Requirements</h3>
+            <p class="scenario"><strong>Scenario:</strong> A startup launches a sales AI agent that autonomously emails prospects, without rules on tone, frequency, or audience selection. It accidentally spams VIP clients with irrelevant offers.</p>
+            <hr class="divider">
+			<p class="risk"><strong>Risk:</strong> Without governance, AI agents can violate policies, laws, or ethics, damaging brand and legal standing.</p>
+            <hr class="divider">
+			<p class="alternative"><strong>Alternative:</strong> Create human-led approval workflows for outbound actions until governance frameworks are in place.</p>
+            <hr class="divider">
+			<p class="mitigation"><strong>Mitigation:</strong> Implement agent policy enforcement — rules, monitoring dashboards, and human-in-the-loop checkpoints for high-impact actions.</p>
+        </div>
+
+        <div class="critical-card">
+            <h3>8. Security Implications </h3>
+            <p class="scenario"><strong>Scenario:</strong> A customer support AI agent autonomously resets passwords for user accounts after minimal verification, leaving the system open to social engineering attacks.</p>
+            <hr class="divider">
+			<p class="risk"><strong>Risk:</strong>Autonomous agents can be exploited if attackers trick them into unsafe actions.</p>
+            <hr class="divider">
+			<p class="alternative"><strong>Alternative:</strong> Keep critical security processes manual or semi-automated with multi-factor human verification.</p>
+            <hr class="divider">
+			<p class="mitigation"><strong>Mitigation:</strong> Enforce strict role-based access control, sandbox the agent, and add anomaly detection for suspicious requests.</p>
+        </div>
+    </div>
+</section>
+
+
+        <section id="executive-guidance">
+            <div class="section-header">
+                <h2>Executive Guidance: Agentic AI Suitability Framework</h2>
+                <button class="listenBtn" data-target="executive-guidance">🔊</button>
+            </div>
+            <p><em>(Agentic AI = AI Agents using LLMs for autonomous decision-making)</em></p>
+            <table class="use-case-table">
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Key Risk</th>
+                        <th>Preferred Alternative</th>
+                        <th>Mitigation if Agentic AI is used</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Costs</td>
+                        <td>Continuous, high-frequency autonomous actions can trigger runaway API and operational costs.</td>
+                        <td>Apply rules-based or selective automation for routine tasks, escalating only complex cases to human decision-makers.</td>
+                        <td>Cost Governance: Limit API calls, enforce budget caps, and require human checkpoints.</td>
+                    </tr>
+                    <tr>
+                        <td>Human Impact</td>
+                        <td>Lack of genuine empathy may damage trust in sensitive interactions.</td>
+                        <td>Human-led engagement supported by Agentic AI suggestions.</td>
+                        <td>Escalation Rules: Route emotionally or sensitive topics to human oversight.</td>
+                    </tr>
+                    <tr>
+                        <td>Real-Time Requirements</td>
+                        <td>LLM decision latency may be unsuitable for millisecond-level or safety-critical operations.</td>
+                        <td>Real-time control systems optimized for low latency deterministic performance.</td>
+                        <td>Offline Role: Restrict AI to analysis and optimization, not direct control.</td>
+                    </tr>
+                    <tr>
+                        <td>Transparency</td>
+                        <td>Agentic AI decision-making may lack explainability, making it hard to justify actions to regulators, customers, or internal auditors.</td>
+                        <td>Apply structured, transparent decision frameworks with clear criteria.</td>
+                        <td>Explainability Layer: Log decisions, store reasoning, and create audit trails.</td>
+                    </tr>
+                    <tr>
+                        <td>Integration Complexity</td>
+                        <td>Connecting AI agents to multiple legacy systems can cause delays, data mismatches, and high maintenance costs.</td>
+                        <td>Start with targeted automation in isolated processes before scaling across systems.</td>
+                        <td>Modular Integration: Use middleware to minimize disruption.</td>
+                    </tr>
+                    <tr>
+                        <td>Data Sensitivity</td>
+                        <td>Outdated or incomplete data can lead to incorrect outputs and reputational harm.</td>
+                        <td>Apply rigorous data cleansing, validation, and enrichment before Agentic AI involvement.</td>
+                        <td>Data Quality Gates: Verify accuracy, completeness, and timeliness before execution.</td>
+                    </tr>
+                    <tr>
+                        <td>Governance Requirements</td>
+                        <td>Lack of policy can cause compliance breaches and reputational risk.</td>
+                        <td>Maintain human approval workflows until governance controls are fully in place.</td>
+                        <td>Policy Enforcement: Rules, monitoring, and human-in-loop for high-impact actions.</td>
+                    </tr>
+                    <tr>
+                        <td>Security Implications</td>
+                        <td>AI agents can be manipulated into unsafe actions through malicious prompts or social engineering.</td>
+                        <td>Keep critical processes manual or semi-automated with rigorous verification controls.</td>
+                        <td>Security Controls: Role-based access, sandboxing, and anomaly detection.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="guidance">
+            <div class="section-header">
+                <h2>Guidance</h2>
+                <button class="listenBtn" data-target="guidance">🔊</button>
+            </div>
+            <p>The decision to use Agentic AI should be guided entirely by your specific use case, risk tolerance, and operational context.</p>
+            <p>The scenarios provided here are not blanket prohibitions—they illustrate environments where the risks can outweigh the benefits.</p>
+            <p>In some cases, non-agentic approaches (rules-based automation, traditional AI models, robotic process automation (RPA)) may deliver safer, more cost-effective results. In others, Agentic AI can still be valuable if combined with strong governance, clear escalation rules, and robust security measures.</p>
+            <p>Agentic AI can deliver significant value, but it must be deployed with appropriate safeguards, governance, and alignment to the intended use case.</p>
+        </section>
+
+        <section id="framework">
+            <div class="section-header">
+                <h2>Framework</h2>
+                <button class="listenBtn" data-target="framework">🔊</button>
+            </div>
+            <h3>Purpose</h3>
+            <p>To guide informed decision-making by identifying conditions where Agentic AI may pose excessive risk, cost, or operational challenges—ensuring adoption is intentional, governed, and aligned with business priorities.</p>
+            <h3>Step 1 – Define the Use Case</h3>
+            <ul>
+                <li>Describe the objective—What decision or task will the AI agent perform?</li>
+                <li>Identify criticality—Is it mission-critical, customer-facing, or regulatory-sensitive?</li>
+                <li>Determine autonomy level—Will AI act independently or with human oversight?</li>
+            </ul>
+            <h3>Step 2 – Assess Against Key Risk Factors</h3>
+            <table class="use-case-table">
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Key Assessment Questions</th>
+                        <th>Considerations When Agentic AI May Not Be the Optimal Approach</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Costs</td>
+                        <td>What is the projected API, compute, and integration cost vs ROI?</td>
+                        <td>High operational costs outweigh expected benefits</td>
+                    </tr>
+                    <tr>
+                        <td>Human Impact</td>
+                        <td>Does the task require empathy, trust-building, or complex social judgment?</td>
+                        <td>Removal of human involvement would degrade quality of interaction</td>
+                    </tr>
+                    <tr>
+                        <td>Real-time Requirements</td>
+                        <td>Does it require millisecond-level decision-making or low-latency control?</td>
+                        <td>AI cannot meet performance demands consistently</td>
+                    </tr>
+                    <tr>
+                        <td>Lack of Transparency</td>
+                        <td>Is explainability required for compliance or customer trust?</td>
+                        <td>AI decisions are not easily interpretable</td>
+                    </tr>
+                    <tr>
+                        <td>Integration Complexity</td>
+                        <td>Does it require connecting to multiple legacy or siloed systems?</td>
+                        <td>Integration costs and risks are excessive</td>
+                    </tr>
+                    <tr>
+                        <td>Data Sensitivity</td>
+                        <td>Is the data complete, accurate, current, and unbiased?</td>
+                        <td>Data quality is insufficient or uncertain</td>
+                    </tr>
+                    <tr>
+                        <td>Governance Requirements</td>
+                        <td>Are there clear policies, monitoring, and escalation processes?</td>
+                        <td>No governance framework in place</td>
+                    </tr>
+                    <tr>
+                        <td>Security Implications</td>
+                        <td>Could the AI’s access or actions be exploited by attackers?</td>
+                        <td>Security risks are unacceptably high</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Step 3 – Decide the Path Forward</h3>
+            <ul>
+                <li>If one or more risk factors are “High” and unavoidable: Consider non-agentic alternatives (rules-based automation, traditional AI, human-led workflows).</li>
+                <li>If risks are “Moderate” and manageable: Proceed with safeguards—apply governance, human-in-loop controls, data validation, and security measures.</li>
+                <li>If risks are “Low”: Agentic AI can be deployed with standard operational controls.</li>
+            </ul>
+            <h3>Step 4 – Governance and Monitoring</h3>
+            <ul>
+                <li>Establish continuous oversight—monitor AI behavior, costs, and performance.</li>
+                <li>Define escalation protocols for unexpected or high-impact AI actions.</li>
+                <li>Conduct periodic risk reviews—re-evaluate suitability as technology and business context evolve.</li>
+            </ul>
+            <h3>Takeaway</h3>
+            <p>Understanding where not to use Agentic AI is as important as knowing where it can succeed. This framework ensures adoption decisions are based on a balanced evaluation of capability vs. risk, avoiding costly missteps and aligning AI use with organizational strategy.</p>
+        </section>
+    </main>
+
+    <button id="topBtn" class="top-link" onclick="scrollToTop()">⬆ Top of Page</button>
+
+    <footer>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kumar-np" target="_blank" class="footer-link">Kumar N.P <img src="images/elephant_face_blue_graident.png" alt="gaja" title="gaja" height="30" width="30" /></a></p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script>
+        function openDecisionTool() {
+            window.open('agenticAI_decisiontool.html', '_blank', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=800,height=600');
+        }
+	</script>
+
+</body>
+</html>
