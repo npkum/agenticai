@@ -511,3 +511,68 @@ select {
     transform: translateY(0);
   }
 }
+/* Critical Factors Section Styling */
+.critical-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.critical-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-left: 5px solid #0055a5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.critical-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.critical-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #003366;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.critical-card p {
+    margin: 0.4em 0;
+    font-size: 0.95rem;
+}
+.critical-card .divider {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 0.5rem 0;
+}
+
+.critical-card .scenario {
+    background-color: #a7c9f0; /* #e8f1fb lightest blue */
+    padding: 0.6rem;
+    border-radius: 4px;
+}
+
+.critical-card .risk {
+    background-color: #bdd7f3; /*#d6e8f8 */
+    padding: 0.6rem;
+    border-radius: 4px;
+}
+
+.critical-card .alternative {
+    background-color: #d2e4f7; /*#c2ddf5 */
+    padding: 0.6rem;
+    border-radius: 4px;
+}
+
+.critical-card .mitigation {
+    background-color: #e8f1fb; /*#add1f2 */
+    padding: 0.6rem;
+    border-radius: 4px;
+}
+
